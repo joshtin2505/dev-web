@@ -11,40 +11,81 @@ main{
     align-items: center;
     height: 100vh;
     width: 100%;
+    background-color: #040303;
 }
 
 .calendar{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    height: 25%;
-    width: 30%;
-    border: 1px solid #000;
+    height: 40%;
+    width: 35%;
+    box-shadow: 0 2px 30px #b3551e8e;
+    border-radius: 10px;
+    background-color: #461111;
+}
+.month{
+    padding: 5px;
+    margin: 1%;
+    border-radius: 5px;
+    transition: .3s;
+}
+.month:hover{
+    background-color: #ffffff0e;
+
 }
 .month ul{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.month ul li {
+    padding: 5px 10px;
+    margin-inline: 10px;
+    border-radius: 5px;
+    background-color: #B3541E;
+    cursor: pointer;
+}
+.month ul button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none !important;
+    background-color: #B3541E;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.month ul button:hover{
+    scale: 1.02;
+    background-color: #7e3b14;
+}
+
 .days-ul{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-items: center;
     align-items: center;
-
+    height: 75%;
+    width: 95%;
 }
 .days-ul li{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 70%;
     width: 90%;
+    border-radius: 10px;
 }
 .num{
-    background-color: aquamarine;
+    background-color: #A13333;
+    transition: .3s;
 }
-
+.num:hover{
+    background-color: #5a1b1b;
+}
 .weekdays{
-    background-color: rgb(129, 129, 129);
+    background-color: #B3541E;
 }
 /* May */
 .one{
