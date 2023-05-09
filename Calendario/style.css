@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    list-style: none ;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.calendar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 25%;
+    width: 30%;
+    border: 1px solid #000;
+}
+.month ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.days-ul{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+
+}
+.days-ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.num{
+    background-color: aquamarine;
+}
+
+.weekdays{
+    background-color: rgb(129, 129, 129);
+}
+/* May */
+.one{
+    grid-column-start: 2;
+}
+
+
+
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 480px) {
+
+    .weekdays li,
+    .days li {
+        width: 100%;
+    }
+}
