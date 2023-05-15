@@ -44,8 +44,12 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #1f1f1f1f;
+    transition: .3s;
 }
-
+.celda:hover{
+    border: 2px solid #1f1f1f6e;
+    scale: 1.02;
+}
 i{
     font-size: 130px;
     opacity: 1;
@@ -53,5 +57,11 @@ i{
 .fa-circle{
 }
 .fa-xmark{
+    color: var(--Color1);
     display: none!important;
 }
+.fa-circle{
+    color: var(--color2);
+    display: none!important;
+}
+
