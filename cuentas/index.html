@@ -25,15 +25,22 @@
         <div class="container">
             <section class="cont is">
                 <div class="sub-cont is-cont">
-                    <form action="">
-                        <div class="user">
-                            <label class="user-placehold" for="">Usuario</label>
-                            <input class="user-in" id="user-in" type="text" name="" id="">
+                    <div class="title iniciartxt">
+                        <h1>Iniciar</h1>
+                    </div>
+                    <form class="is-form" action="">
+                        <div class="form-cont">
+                            <div class="user">
+                                <label class="user-placehold" for="">Usuario</label>
+                                <input class="user-in" id="user-in" type="text" name="" id="">
+                            </div>
+                            <div class="pass">
+                                <label class="pass-placehold" for="">Contraseña</label>
+                                <input class="pass-in" id="pass-in" type="password" name="" id="">
+                            </div>
                         </div>
-                        <div class="pass">
-                            <label class="pass-placehold" for="">Contraseña</label>
-                            <input class="pass-in" id="pass-in" type="password" name="" id="">
-                        </div>
+
+                        <span><a href="">¿Olvidaste tu contraseña?</a></span>
                     </form>
                 </div>
             </section>
@@ -44,7 +51,7 @@
                         <div class="nam-lastnam">
                             <div class="cc-name">
                                 <label class="cc-name-placehold" for="">Nombre</label>
-                                <input class="cc-name-in" id="cc-name-in" type="text" name="">
+                         ,       <input class="cc-name-in" id="cc-name-in" type="text" name="">
                             </div>
                             <div class="cc-lname">
                                 <label class="cc-lname-placehold" for="">Apellido</label>
@@ -68,18 +75,19 @@
             </section>
             <!-- Covertor de cc y is -->
             <section class="section-cover">
-                <div class="cover-cc">
+                <div class="g-cover cover-cc">
                     <h1>¿No Has Creado una Cuenta?</h1>
-                    <button>Crea una cuenta</button>
+                    <button id="cc-btn">Crea una cuenta</button>
                 </div>
-                <div class="cover-is">
+                <div class="g-cover cover-is">
                     <h1>¿Ya Tines Una cuenta?</h1>
-                    <button>Inicia SesionÑ</button>
+                    <button id="is-btn">Inicia Sesion</button>
                 </div>
             </section>
         </div>
 
     </main>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
