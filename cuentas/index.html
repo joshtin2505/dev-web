@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuentas</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 
 <body>
@@ -37,7 +39,13 @@
                             <div class="pass">
                                 <label class="pass-placehold" for="">Contraseña</label>
                                 <input class="pass-in" id="pass-in" type="password" name="" id="">
+                                <span class="hide-pass"><i class="fa-solid fa-eye"></i><i class="fa-solid fa-eye-slash"></i></span>
                             </div>
+                        </div>
+                        <div class="sin-cont">
+                            <div id="google-signin-button"><i class="fa-brands fa-google"></i></div>
+                            <div id="facebook-signin-button"><i class="fa-brands fa-facebook"></i></div>
+                            <div id="twitter-signin-button"><i class="fa-brands fa-twitter"></i></i></div>
                         </div>
 
                         <span><a href="">¿Olvidaste tu contraseña?</a></span>
@@ -61,7 +69,7 @@
                         <div class="cc-user">
                             <label class="cc-user-placehold" for="">Usuario</label>
                             <input class="cc-user-in" id="cc-user-in" type="text" name="">
-                        </div>
+                       </div>
                         <div class="cc-pass">
                             <label class="cc-pass-placehold" for="">Contraseña</label>
                             <input class="cc-pass-in" id="cc-pass-in" type="password" name="">
@@ -88,6 +96,9 @@
 
     </main>
     <script src="js/index.js"></script>
+    <!-- Api de google para iniciar sesion -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
 </body>
 
 </html>

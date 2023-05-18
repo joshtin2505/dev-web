@@ -47,3 +47,48 @@ isBtn.addEventListener('click', () =>{
     teamcc.style.display = 'flex';
     cover.style.left = '50%';
 });
+
+// Ver Contraseña
+
+const ver_btn = document.querySelector('.fa-eye');
+const noVer_btn = document.querySelector('.fa-eye-slash');
+
+
+ver_btn.addEventListener('click', () =>{
+
+    inpass_1.type = 'text';
+
+    noVer_btn.style.visibility = 'visible';
+    ver_btn.style.visibility = 'hidden';
+});
+
+noVer_btn.addEventListener('click', () =>{
+    inpass_1.type = 'password';
+
+    ver_btn.style.visibility = 'visible';
+    noVer_btn.style.visibility = 'hidden';
+});
+
+// Configuración de Google Sign-In
+function initGoogleSignIn() {
+    google.accounts.id.initialize({
+      client_id: 'cuentas-387114',
+      callback: handleGoogleSignIn,
+      auto_select: true,
+    });
+    google.accounts.id.renderButton(
+      document.getElementById('google-signin-button'),
+      { theme: 'filled_blue' }
+    );
+  }
+  
+  // Manejo del inicio de sesión con Google
+  function handleGoogleSignIn(response) {
+    const credential = response.credential;
+    // Aquí puedes enviar la credencial a tu servidor para autenticar al usuario
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    initGoogleSignIn();
+  });
+  
+  

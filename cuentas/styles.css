@@ -145,6 +145,7 @@ main {
 
 .is-form .form-cont{
     width: 90%;
+    margin-bottom: 20px;
 }
 
 .form-cont div{
@@ -155,10 +156,15 @@ main {
     width: 100%;
     background: #5c5c5c52 ;
     color: white;
+    margin-top: 25px;
     padding: 2px;
+    padding-inline: 8px;
     border-radius: 10px;
     border: none;
     z-index: 10;
+}
+.pass .pass-in{
+    padding-right: 35px;
 }
 
 .user .user-placehold, .pass .pass-placehold{
@@ -168,11 +174,52 @@ main {
     z-index: 999;
     transition: .5s;
 }
-.user .user-in, .pass .pass-in{
- margin-top: 25px;
+
+
+/* Ver contraseña */
+.pass .hide-pass{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    top: 186px;
+    right: 45px;
 }
 
+.fa-eye, .fa-eye-slash{
+    position: absolute;
+    transition: .3s;
+}
+.fa-eye:hover, .fa-eye-slash:hover{
+    color: #FF6000;
+    cursor: pointer;
+}
 
+.fa-eye-slash{
+    visibility: hidden;
+}
+/* Iniciar con google */
+.sin-cont{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.fa-google, .fa-facebook, .fa-twitter{
+    margin-inline: 5px;
+    font-size: 25px;
+    transition: .3s;
+}
+.fa-google:hover, .fa-facebook:hover, .fa-twitter:hover{
+    color: #FF6000;
+    cursor: pointer;
+
+}
 /* Crear Cuenta */
 
 .container .cc {
@@ -194,6 +241,7 @@ main {
     border-radius: 20px;
     transition: 1s;
 }
+/* Propiedades globales de los botnones del covertor */
 .section-cover .g-cover{
     display: flex;
     justify-content: center;
@@ -219,9 +267,7 @@ main {
     scale: 1.015;
     box-shadow: 3px 3px 30px #222222;
 }
-.section-cover .cover-cc{
-    
-}
+/* oculto inicalmente el boton para correr hacia iniciar sesion */
 .section-cover .cover-is{
     display: none ;
 }
