@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    --primary-100: #FF6000;
+    --primary-200: #FFA559;
+    --primary-300: #944424;
+    --accent-100: #FFE6C7;
+    --accent-200: #454545;
+    --text-100: #333333;
+    --text-200: #5c5c5c;
+    --bg-100: #FDEBD0;
+    --bg-200: #f3e1c6;
+    --bg-300: #cab99f;
+    /* Colores oscuros para el texto */
+    --gd: #333333;
+    /* Gris oscuro */
+    --gdc: #444444;
+    /* Gris oscuro más claro */
+    --gdo: #222222;
+    /* Gris oscuro más oscuro */
+    --gdomo: #111111;
+    /* Gris oscuro más oscuro */
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: url('/images/bgl.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    height: 40px;
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    font-weight: 600;
+    backdrop-filter: blur(50px);
+    border-radius: 50px;
+    box-shadow: 2px 2px 30px var(--accent-200);
+    border: 2px solid var(--accent-100);
+}
+.logo a{
+    font-size: 20px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    padding-inline: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    height: 80%;
+    width: 70%;
+    background-color: #ffa45949;
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    box-shadow: 10px 10px 30px #9444248e;
+    overflow: hidden;
+}
+
+
+/* Estilos globales para los sub contenedores is y cc */
+
+.container .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+
+.cont .sub-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    width: 60%;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    background-color: #5c5c5c62;
+    box-shadow: 10px 10px 50px #222222;
+    overflow: hidden;
+}
+.sub-cont .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 20%;
+    width: 100%;
+    background: linear-gradient(165deg, #FF6000 , #ffa459 );
+}
+
+.sub-cont .is-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+}
+
+
+/* Iniciar sesion */
+
+.container .is {
+    height: 100%;
+    width: 50%;
+}
+
+
+.is-form .form-cont{
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.form-cont div{
+    width: 100%;
+}
+
+.user .user-in, .pass .pass-in{
+    width: 100%;
+    background: #5c5c5c52 ;
+    color: white;
+    margin-top: 25px;
+    padding: 2px;
+    padding-inline: 8px;
+    border-radius: 10px;
+    border: none;
+    z-index: 10;
+}
+.pass .pass-in{
+    padding-right: 35px;
+}
+
+.user .user-placehold, .pass .pass-placehold{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 25px;
+    z-index: 999;
+    transition: .5s;
+}
+
+
+/* Ver contraseña */
+.pass .hide-pass{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    top: 186px;
+    right: 45px;
+}
+
+.fa-eye, .fa-eye-slash{
+    position: absolute;
+    transition: .3s;
+}
+.fa-eye:hover, .fa-eye-slash:hover{
+    color: #FF6000;
+    cursor: pointer;
+}
+
+.fa-eye-slash{
+    visibility: hidden;
+}
+/* Iniciar con google */
+.sin-cont{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.fa-google, .fa-facebook, .fa-twitter{
+    margin-inline: 5px;
+    font-size: 25px;
+    transition: .3s;
+}
+.fa-google:hover, .fa-facebook:hover, .fa-twitter:hover{
+    color: #FF6000;
+    cursor: pointer;
+
+}
+/* Crear Cuenta */
+
+.container .cc {
+    height: 100%;
+    width: 50%;
+}
+
+/* covertor */
+.container .section-cover {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: 100;
+    background: linear-gradient(135deg, #ff6200 , #ffa459 50%);
+    border-radius: 20px;
+    transition: 1s;
+}
+/* Propiedades globales de los botnones del covertor */
+.section-cover .g-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.g-cover h1{
+    font-size: 24px;
+    text-shadow: 3px 3px 10px #1b1b1b;
+}
+.g-cover button{
+    color: #111111;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 10px #222222;
+    transition: .3s;
+}
+.g-cover button:hover{
+    scale: 1.015;
+    box-shadow: 3px 3px 30px #222222;
+}
+/* oculto inicalmente el boton para correr hacia iniciar sesion */
+.section-cover .cover-is{
+    display: none ;
+}
