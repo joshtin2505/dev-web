@@ -54,14 +54,33 @@ i{
     font-size: 130px;
     opacity: 1;
 }
-.fa-circle{
+
+.oc,
+.sc,
+.tc,
+.fc,
+.fic,
+.sic,
+.sec,
+.ec,
+.nc{
+    display: none!important;
+}
+.ox,
+.sx,
+.tx,
+.fx,
+.fix,
+.six,
+.sex,
+.ex,
+.nx{
+    display: none!important;
 }
 .fa-xmark{
-    color: var(--Color1);
-    display: none!important;
+    color: #1f1f1f93;
 }
 .fa-circle{
-    color: var(--color2);
-    display: none!important;
+    color: var(--Color1);
 }
 
