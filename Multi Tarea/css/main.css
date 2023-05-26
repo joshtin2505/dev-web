@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+:root{
+    --dark-main-color: #4082fb;
+    --dark-second-color: #717380;
+    --dark-th-color: #9699aa;
+    --dark-bg: #15161a;
+    --enfacis-color: #f49a3b;
+    --enfacis-color2: #5397fc;
+    --enfacis-color2: #6fd69a;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+body{
+    background-color: var(--dark-bg);
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    height: 100%;
+    width: 100%;
+}
+.left-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    height: 100%;
+    border-right: 2px solid #7173806e;
+}
+.cont-nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 96%;
+    width: 90%;
+    gap: 15px;
+}
+.header-nav-txt{
+    height: 40px;
+    width: 100%;
+
+}
+.header-nav-txt h2{
+    padding-left: 10px;
+    width: 100%;
+    color: var(--dark-main-color);
+}
+
+.btn{
+    height: 40px;
+    width: 100%;
+}
+.btn button{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    color: var(--dark-th-color);
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.btn button i{
+    font-size: 18px;
+}
+.btn  button p{
+    font-size: 14px;
+}
+.btn button:hover{
+    color: var(--dark-main-color);
+    background-color: #22252bda;
+}
+.folder-btn button .bi-chevron-down{
+    position: relative;
+    margin: 30%;
+    opacity: 0;
+    transition: .3s ;
+}
+
+.folder-btn button:hover .bi-chevron-down{
+    opacity: 1;
+}
+.help-btn, .settings-btn{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+}
+.help-btn{
+    bottom: 0;
+}
+
+.settings-btn{
+    bottom: 60px;
+}
+.floor-btn button{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    color: var(--dark-th-color);
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.floor-btn button i{
+    font-size: 18px;
+}
+.floor-btn  button p{
+    font-size: 14px;
+}
+.floor-btn button:hover{
+    color: var(--dark-main-color);
+    background-color: #22252bda;
+}
+.true-cont{
+    order: 2;
+
+}
