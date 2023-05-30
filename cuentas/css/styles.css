@@ -59,9 +59,11 @@ nav {
     box-shadow: 2px 2px 30px var(--accent-200);
     border: 2px solid var(--accent-100);
 }
-.logo a{
+
+.logo a {
     font-size: 20px;
 }
+
 nav ul {
     display: flex;
     justify-content: space-evenly;
@@ -103,31 +105,31 @@ main {
     z-index: 0;
 }
 
-
 .cont .sub-cont {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 70%;
-    width: 60%;
+    height: 55%;
+    width: 45%;
     backdrop-filter: blur(10px);
     border-radius: 30px;
     background-color: #5c5c5c62;
     box-shadow: 10px 10px 50px #222222;
     overflow: hidden;
 }
-.sub-cont .title{
+
+.sub-cont .title {
     display: flex;
     justify-content: center;
     align-items: center;
     top: 0;
     height: 20%;
     width: 100%;
-    background: linear-gradient(165deg, #FF6000 , #ffa459 );
+    background: linear-gradient(165deg, #FF6000, #ffa459);
 }
 
-.sub-cont .is-form{
+.sub-cont .is-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,67 +146,137 @@ main {
     width: 50%;
 }
 
-
-.is-form .form-cont{
+.is-form .form-cont {
     width: 90%;
     margin-bottom: 20px;
 }
 
-.form-cont div{
+.form-cont div {
     width: 100%;
 }
 
-.user .user-in, .pass .pass-in{
+.pass {
+    overflow: hidden;
+}
+
+.user .user-in,
+.pass .pass-in {
+    height: 30px;
     width: 100%;
-    background: #5c5c5c52 ;
+    background: #5c5c5c52;
     color: white;
     margin-top: 25px;
     padding: 2px;
     padding-inline: 8px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: none;
     z-index: 10;
 }
-.pass .pass-in{
+
+.pass .pass-in {
     padding-right: 35px;
 }
 
-.user .user-placehold, .pass .pass-placehold{
+.user .user-placehold,
+.pass .pass-placehold {
     position: absolute;
     margin-left: 5px;
-    margin-top: 25px;
+    margin-top: 30px;
     z-index: 999;
     transition: .5s;
 }
 
 
 /* Ver contraseña */
-.pass .hide-pass{
+
+.pass .hide-pass {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 30px;
     width: 30px;
-    top: 186px;
-    right: 45px;
+    top: 45%;
+    right: 15%;
 }
 
-.fa-eye, .fa-eye-slash{
+.fa-eye,
+.fa-eye-slash {
     position: absolute;
     transition: .3s;
 }
-.fa-eye:hover, .fa-eye-slash:hover{
+
+.fa-eye:hover,
+.fa-eye-slash:hover {
     color: #FF6000;
     cursor: pointer;
 }
 
-.fa-eye-slash{
+.fa-eye-slash {
     visibility: hidden;
 }
-/* Iniciar con google */
-.sin-cont{
 
+
+/* boton */
+
+.btn-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 60px;
+    width: 80%;
+}
+
+.btn-is {
+    position: relative;
+    color: #fff;
+    background: linear-gradient(-290deg, var(--primary-100), var(--primary-200));
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    z-index: 1;
+    font-size: 16px;
+    height: 35px;
+    width: 80%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-is::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--text-100);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.btn-is:hover::before {
+    width: 205%;
+}
+
+.btn-is:hover {
+    box-shadow: 8px 8px 30px #1f1f1f;
+    border: 2px solid #fff;
+}
+
+.btn-is:active {
+    box-shadow: 8px 8px 30px #1f1f1f;
+    border: 2px solid #ff6200;
+}
+
+
+/* Iniciar con redes sociales */
+
+.sin-cont {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,16 +284,30 @@ main {
     margin-bottom: 20px;
 }
 
-.fa-google, .fa-facebook, .fa-twitter{
+.fa-google,
+.fa-facebook,
+.fa-twitter {
     margin-inline: 5px;
     font-size: 25px;
     transition: .3s;
 }
-.fa-google:hover, .fa-facebook:hover, .fa-twitter:hover{
+
+.fa-google:hover,
+.fa-facebook:hover,
+.fa-twitter:hover {
     color: #FF6000;
     cursor: pointer;
-
 }
+
+.pass-new {
+    transition: .3s;
+}
+
+.pass-new:hover {
+    color: #FF6000;
+}
+
+
 /* Crear Cuenta */
 
 .container .cc {
@@ -229,7 +315,9 @@ main {
     width: 50%;
 }
 
+
 /* covertor */
+
 .container .section-cover {
     position: absolute;
     display: flex;
@@ -239,22 +327,27 @@ main {
     height: 100%;
     width: 50%;
     z-index: 100;
-    background: linear-gradient(135deg, #ff6200 , #ffa459 50%);
+    background: linear-gradient(135deg, #ff6200, #ffa459 50%);
     border-radius: 20px;
     transition: 1s;
 }
+
+
 /* Propiedades globales de los botnones del covertor */
-.section-cover .g-cover{
+
+.section-cover .g-cover {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.g-cover h1{
+
+.g-cover h1 {
     font-size: 24px;
     text-shadow: 3px 3px 10px #1b1b1b;
 }
-.g-cover button{
+
+.g-cover button {
     color: #111111;
     font-size: 16px;
     font-weight: 600;
@@ -265,11 +358,15 @@ main {
     box-shadow: 3px 3px 10px #222222;
     transition: .3s;
 }
-.g-cover button:hover{
+
+.g-cover button:hover {
     scale: 1.015;
     box-shadow: 3px 3px 30px #222222;
 }
+
+
 /* oculto inicalmente el boton para correr hacia iniciar sesion */
-.section-cover .cover-is{
-    display: none ;
+
+.section-cover .cover-is {
+    display: none;
 }
